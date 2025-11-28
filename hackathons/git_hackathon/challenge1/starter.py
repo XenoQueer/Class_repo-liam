@@ -19,7 +19,7 @@ def compute_mean(values):
 
     BUGS: implementation is incomplete / incorrect.
     """
-    total = 0
+    total = 
     for v in values:
         total = v  # BUG: this is wrong
     return total
