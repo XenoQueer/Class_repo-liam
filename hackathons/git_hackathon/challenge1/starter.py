@@ -19,9 +19,13 @@ def compute_mean(values):
 
     BUGS: implementation is incomplete / incorrect.
     """
-    total = 
+    total = 0
+    t = 0
     for v in values:
-        total = v  # BUG: this is wrong
+        t = t + 1
+        total = total + v 
+        total / t 
+         # BUG: this is wrong -fixed?
     return total
 
 def compute_median(values):
