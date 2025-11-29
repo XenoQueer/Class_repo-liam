@@ -32,9 +32,12 @@ def compute_mean(values):
 
 def compute_median(values):
     """Return the median of a list of numbers.
-
     BUGS: does not handle even-length lists or empty lists correctly.
     """
+    for v in values:
+     d = v/2
+     m = 0 + d
+     
     # TODO: implement proper median
     return values[0]
 
