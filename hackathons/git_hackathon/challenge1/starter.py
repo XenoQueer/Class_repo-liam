@@ -65,11 +65,20 @@ if __name__ == "__main__":
 def compute_mode(values):
    a = 0
    b = 0 
+   c = 0
    for v in values:
-    a = v
-    for v in values:
-       if a == v:
+        a = v
+        if v == b:
+            c= c+1 
+        for v in values:
+          if b == 0:
+       
+           if a == v:
           
-           b = v
-       else:
-   if v == b 
+               b = v
+       
+          elif b > a:
+             b = a
+          
+        return print(c)
+        
