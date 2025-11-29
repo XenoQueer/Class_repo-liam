@@ -10,6 +10,8 @@ def read_numbers_from_csv(path):
         for line in f:
             value = line.strip()
             if line >= 0:
+            
+            
             # TODO: convert value to float and add to numbers
             # HINT: you should skip values that cannot be converted
              numbers.append(value)
@@ -37,7 +39,8 @@ def compute_median(values):
     for v in values:
      d = v/2
      m = 0 + d
-     
+     if m == 0:
+        return print('empty list')
     # TODO: implement proper median
     return values[0]
 
@@ -58,3 +61,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def compute_mode(values):
+   a = 0
+   b = 0 
+   for v in values:
+    a = v
+    for v in values:
+       if a == v:
+          
+           b = v
+       else:
+   if v == b 
