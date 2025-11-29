@@ -9,9 +9,11 @@ def read_numbers_from_csv(path):
     with open(path, "r") as f:
         for line in f:
             value = line.strip()
+            if line >= 0:
             # TODO: convert value to float and add to numbers
             # HINT: you should skip values that cannot be converted
-            numbers.append(value)
+             numbers.append(value)
+            
     return numbers
 
 def compute_mean(values):
